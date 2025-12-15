@@ -1,13 +1,16 @@
+
+
 class Cloth {
   String imgLabel;
   String imageUrl;
   String imageText;
+  double imagePrice;
 
-  Cloth(this.imageUrl,this.imgLabel,this.imageText);
+  Cloth(this.imageUrl,this.imgLabel,this.imageText,this.imagePrice);
 
   static List<Cloth> samples = [
-  Cloth('assets/images/01.webp', 'Thai red curry','Create a Thai-style feast at home with our Cloths, from fragrant green curries to veggie noodles and classic pad Thai'),
-  Cloth('assets/images/02.webp', 'Thai green curry','Create a Thai-style feast at home with our Cloths, from fragrant green curries to veggie noodles and classic pad Thai'),
-  Cloth('assets/images/03.webp', 'larb num tok','Create a Thai-style feast at home with our Cloths, from fragrant green curries to veggie noodles and classic pad Thai')
+  Cloth('assets/images/01.webp', 'Bomber Jacket','Short length, stand collar design for sporty or casual everyday styling , Windproof technology. Water-repellent finish protects against light rain. Finish is not permanent. Waterproof fastener on the front keeps rain out.',1200.0),
+  Cloth('assets/images/02.webp', 'Fleece Full-zip Jacket','The collar stands up well to keep your neck warm. , Piping at the cuffs and hem keeps cold air out and warmth in. Warm, puffy fabric.',2500.0),
+  Cloth('assets/images/03.webp', 'Down Coats','Cotton blend fabric with a crisp, tailored look.The short length pairs well with voluminous bottoms.',1650.0)
 ];
 }

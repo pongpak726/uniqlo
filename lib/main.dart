@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Uniqlo'),
     );
   }
 }
@@ -78,7 +78,12 @@ Widget buildClothCard(Cloth Cloth) {
           SizedBox(height: 12.0),
           Image(image: AssetImage(Cloth.imageUrl)),
           SizedBox(height: 14.0),
-          Text("I'm hungry"),
+          Text('${Cloth.imagePrice.toStringAsFixed(0)} Bath',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+          ),
+          
         ],
       ),
     ),
