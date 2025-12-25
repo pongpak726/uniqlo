@@ -28,18 +28,24 @@ class ClothDetailState extends State<ClothDetail>{
         children: [
         Image.asset(widget.cloth.imageUrl , fit: BoxFit.contain),
         const SizedBox(height: 20.0,),
-        Text(
-          widget.cloth.imgLabel,
-          style: const TextStyle(
-            fontSize: 24.0,
-            fontWeight: FontWeight.bold
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            widget.cloth.imgLabel,
+            style: const TextStyle(
+              fontSize: 24.0,
+              fontWeight: FontWeight.bold
+            ),
           ),
         ),
-        Text(
-          widget.cloth.imageText,
-          style: GoogleFonts.roboto(
-            fontSize: 20.0,
-            fontWeight:FontWeight.bold
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            widget.cloth.imageText,
+            style: GoogleFonts.roboto(
+              fontSize: 20.0,
+              fontWeight:FontWeight.bold
+            ),
           ),
         ),
 
